@@ -11,6 +11,7 @@ import javax.swing.JTextArea;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JScrollPane;
+import javax.swing.JLabel;
 
 public class V1 extends JFrame implements ActionListener {
 
@@ -65,6 +66,11 @@ public class V1 extends JFrame implements ActionListener {
 			btnNewButton_1.setBounds(201, 73, 85, 21);
 			contentPane.add(btnNewButton_1);
 		}
+		{
+			lblNewLabel = new JLabel("Hola");
+			lblNewLabel.setBounds(28, 20, 45, 13);
+			contentPane.add(lblNewLabel);
+		}
 	}
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnNewButton) {
@@ -75,6 +81,7 @@ public class V1 extends JFrame implements ActionListener {
 	private JScrollPane scrollPane;
 	private JTextArea txtS;
 	private JButton btnNewButton_1;
+	private JLabel lblNewLabel;
 	protected void do_btnNewButton_actionPerformed(ActionEvent e) {
 		Listado();
 	}

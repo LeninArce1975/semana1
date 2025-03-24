@@ -60,6 +60,11 @@ public class V1 extends JFrame implements ActionListener {
 				scrollPane.setViewportView(txtS);
 			}
 		}
+		{
+			btnNewButton_1 = new JButton("New button");
+			btnNewButton_1.setBounds(201, 73, 85, 21);
+			contentPane.add(btnNewButton_1);
+		}
 	}
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnNewButton) {
@@ -69,6 +74,7 @@ public class V1 extends JFrame implements ActionListener {
 	Controlador_producto cp=new Controlador_producto();
 	private JScrollPane scrollPane;
 	private JTextArea txtS;
+	private JButton btnNewButton_1;
 	protected void do_btnNewButton_actionPerformed(ActionEvent e) {
 		Listado();
 	}
